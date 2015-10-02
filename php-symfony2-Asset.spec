@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Asset Component
 Name:		php-symfony2-%{package}
-Version:	2.7.3
+Version:	2.7.5
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	18a6584b897b1e08e3272f2df905953b
+# Source0-md5:	c9c9b5031a46ee8bdd0f0df3575bce8e
 URL:		http://symfony.com/doc/2.7/components/asset/
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
