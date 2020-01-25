@@ -1,6 +1,5 @@
 %define		package	Asset
 %define		php_min_version 5.3.9
-%include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Asset Component
 Name:		php-symfony2-%{package}
 Version:	2.7.8
