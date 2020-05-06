@@ -2,13 +2,13 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 Asset Component
 Name:		php-symfony2-%{package}
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	c5caa626d7df013416dddabc5813c06f
-URL:		http://symfony.com/doc/2.7/components/asset/
+# Source0-md5:	918417574f26e7e618cdc5d1d2a1ca82
+URL:		https://symfony.com/doc/2.8/components/asset.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
