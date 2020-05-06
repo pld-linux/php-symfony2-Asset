@@ -3,11 +3,13 @@
 Summary:	Symfony2 Asset Component
 Name:		php-symfony2-%{package}
 Version:	2.8.52
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
 # Source0-md5:	918417574f26e7e618cdc5d1d2a1ca82
+Patch0:		https://github.com/symfony/asset/compare/2.8...glensc:2.8.patch?/JsonManifestVersionStrategy.patch
+# Patch0-md5:	23bffda6937a66550e73e24320c8fd46
 URL:		https://symfony.com/doc/2.8/components/asset.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
@@ -25,6 +27,7 @@ assets such as CSS stylesheets, JavaScript files and image files.
 
 %prep
 %setup -q -n asset-%{version}
+%patch0 -p1
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
