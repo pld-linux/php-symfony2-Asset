@@ -27,7 +27,7 @@ assets such as CSS stylesheets, JavaScript files and image files.
 
 %prep
 %setup -q -n asset-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
